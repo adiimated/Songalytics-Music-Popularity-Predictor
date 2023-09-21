@@ -10,4 +10,8 @@ Link : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
 
 ## Cleaning the data set
 
+## Explorartory Data Analysis
+
+## What makes a popular song ?
+
 ## Machine Learning Algos
