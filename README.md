@@ -12,6 +12,6 @@ Link : https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
 
 ## Explorartory Data Analysis
 
-## What makes a popular song ?
+## What constitutes a popular song ?
 
 ## Machine Learning Algos
