@@ -16,8 +16,14 @@ Steps taken to clean the data:
 3. Checking for duplicate rows and dropping them
 4. Checking the data type of columns - changing if required
 5. Removing Outliers
-6. Created a new column based  on popularity score - popularity category (0-25: emerging , 26-50: upandcoming, 51-75: mainstreamhits, 76-100: charttoppers): Based on the popularity score, a new categorical column named ‘popularity category’ was created. The scores were divided into four categories: ‘emerging’ (0-25), ‘upandcoming’ (26-50), ‘mainstreamhits’ (51-75), and ‘charttoppers’ (76-100). Creating this new column is significant as it facilitates segmented analysis, allowing for a more nuanced understanding of the different popularity levels of the tracks
+6. Created a new column based  on popularity score - popularity category : Based on the popularity score, a new categorical column named ‘popularity category’ was created. The scores were divided into four categories: ‘emerging’ (0-25), ‘upandcoming’ (26-50), ‘mainstreamhits’ (51-75), and ‘charttoppers’ (76-100). Creating this new column is significant as it facilitates segmented analysis, allowing for a more nuanced understanding of the different popularity levels of the tracks
 
+| Category  | Popularity Score Range |
+| ------------- | ------------- |
+| Emerging | 0-25 |
+| Up and Coming  | 26-50  |
+| Mainstream Hits  | 51-75 |
+| Chart Toppers  | 76-100  |
 
 
 ## Explorartory Data Analysis
