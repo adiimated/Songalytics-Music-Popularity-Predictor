@@ -30,7 +30,7 @@ Steps taken to clean the data:
 
 ### Summary Statistics
 
-1. Categorical Features:
+Categorical Features:
 
 a. Artists:
 The dataset incorporates a diverse collection of 30,119 unique artists, where "The Beatles" is the preeminent group, featured 271 times, marking the highest frequency among all the artists present.
