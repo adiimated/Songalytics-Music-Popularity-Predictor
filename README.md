@@ -136,7 +136,6 @@ category_mean = df.groupby('popularity_category').mean()
 
 # Sorting the resulting DataFrame by 'popularity' in descending order for better readability
 category_mean.sort_values(by='popularity', ascending=False)
-     
 ```
 
 ```
@@ -162,4 +161,16 @@ for feature in features:
 
 p_values
 ```
+
+```
+{'explicit': 6.454145319575757e-131,
+ 'duration_ms': 1.7746465932399508e-56,
+ 'danceability': 4.994958051619132e-127,
+ 'loudness': 2.2979291269703185e-84,
+ 'instrumentalness': 3.0203410777439953e-282,
+ 'valence': 2.169545891776659e-87,
+ 'speechiness': 2.105664599560184e-155}
+ ```
+
+
 ## Machine Learning Algos
