@@ -117,6 +117,20 @@ cantopop        996
 
 ### Artists with most Chart Toppers
 
+```
+  artists 	chart_toppers_count
+0 	Bad Bunny 	            48
+1 	Arctic Monkeys 	        30
+2 	Red Hot Chili Peppers 	30
+3 	The Neighbourhood 	    25
+4 	BTS 	                  20
+5 	Adele 	                19
+6 	Feid 	                  18
+7 	XXXTENTACION 	          18
+8 	Halsey 	                18
+9 	Nirvana 	              18
+```
+
 ### Average Dancebility for Top 10 Frequent Genres
 
 ## What constitutes a popular song ?
