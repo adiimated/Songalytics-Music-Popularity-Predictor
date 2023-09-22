@@ -30,7 +30,7 @@ Steps taken to clean the data:
 
 ### Summary Statistics
 
-#### Categorical Features:
+Here are some fun ones!
 
 | Feature | Analysis |
 | ------------- | ------------- |
@@ -40,26 +40,71 @@ Steps taken to clean the data:
 | track_genre  | 114 unique genres with "sad" being the most frequent genre (1,000 times).  |
 | popularity_category  | 4 unique categories with "Emerging Artists" being the most frequent category (41,279 times). |
 
-| Content Cell  | Content Cell  |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+### Distribution of Numerical Features
 
+When interpreting the provided histograms, we are getting insights into the different characteristics of a collection of music tracks. Let’s break down these insights:
 
-#### Numerical Features:
+1. Popularity:
+
+    Majority Low Popularity: Most of the tracks have popularity between 0 and 40.
+    Some High Popularity: Few tracks exist with high popularity, extending up to 100.
+
+2. Duration_ms:
+
+    Mainstream Duration: Most tracks have a duration between 100,000 ms (1.67 minutes) and 300,000 ms (5 minutes).
+    Extended Duration: Few tracks are longer than the typical range.
+
+3. Danceability:
+
+    Moderate to High Danceability: The majority of tracks score between 0.4 and 0.8 on danceability, indicating a general preference for danceable music.
+
+4. Energy:
+
+    Balanced Distribution: Energy levels are evenly distributed, with a slight inclination towards higher energy levels.
+
+5. Key:
+
+    Uniform Distribution: Tracks are spread across different keys uniformly, indicating a varied musical scale presence.
+
+6. Loudness:
+
+    Predominantly Loud: The majority of the tracks are loud, falling between -10 and -5 dB, with fewer tracks being quieter.
+
+7. Speechiness:
+
+    Predominantly Non-Speechy: Most tracks have low speechiness, indicating that they contain more music than spoken words.
+
+8. Acousticness:
+
+    Varied Acousticness: Many tracks have low to moderate acousticness with fewer tracks having high acousticness.
+
+9. Instrumentalness:
+
+    Predominantly Non-Instrumental: Most tracks are not instrumental.
+    Variety: Few tracks exhibit moderate to high instrumentalness.
+
+10. Liveness:
+
+    Studio-like Quality: Most tracks have low liveness, meaning they probably are studio recordings with less audience noise.
+    Few Live Recordings: Some tracks have high liveness, indicating potential live recordings.
+
+11. Valence:
+
+    Balanced Mood: Tracks have a balanced distribution in terms of valence with a slight inclination towards happier or more positive music.
+
+12. Tempo:
+
+    Common Tempo: Most tracks lie in the common tempo range of 80 to 140 BPM (Beats Per Minute).
+    Varied Tempo: Few tracks fall outside the common tempo range, suggesting variety in rhythm speed.
+
+13. Time_Signature:
+
+    Common Time: Most tracks have a 4/4 time signature, which is the most common time signature in modern music.
+
+Conclusion:
+
+This collection seems to contain a diverse range of music tracks but leans more towards mainstream preferences, such as moderate to high danceability, higher energy levels, louder volumes, and common time signatures. There are also instances of less common musical elements, providing a variety, such as tracks with high instrumentalness, varied tempo, and live recordings. The uniform distribution in keys also ensures a wide range of musical scales.
+
 
 ## What constitutes a popular song ?
 
