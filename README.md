@@ -71,7 +71,7 @@ This collection seems to contain a diverse range of music tracks but leans more 
 
 ### Distribution of Categorical Features
 
-![Distribution of Categorical Features](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/distribution.png)
+![Distribution of Categorical Features](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/Cat%20features.png)
 
 * Explicit: The majority of the tracks are not explicit, with a smaller number of tracks being explicit.
 * Mode: Most tracks are in Mode 1, with fewer tracks in Mode 0.
