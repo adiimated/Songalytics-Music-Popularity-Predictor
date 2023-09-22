@@ -138,6 +138,21 @@ category_mean = df.groupby('popularity_category').mean()
 category_mean.sort_values(by='popularity', ascending=False)
 ```
 
+* Chart-Toppers tend to have higher energy, danceability, and valence compared to the other categories.
+* Explicit Content: A higher percentage of Chart-Toppers have explicit content compared to the other categories.
+* Acousticness: Chart-Toppers tend to have lower acousticness, implying that they might have more electronic elements.
+* Instrumentalness: Chart-Toppers tend to have lower instrumentalness, implying they are likely to have more vocal content.
+* Liveness: Up-and-Coming and Emerging Artists categories tend to have higher liveness compared to Chart-Toppers and Mainstream Hits.
+* Speechiness: Emerging Artists category has slightly higher speechiness compared to the other categories.
+
+Observations:
+* Explicit Content (r=0.0424r=0.0424): Songs with explicit content tend to have a slight positive correlation with popularity.
+* Duration (r=0.0380r=0.0380): There is a slight positive correlation between the duration of a song and its popularity.
+* Danceability (r=0.0357r=0.0357): There is a slight positive correlation between danceability and popularity.
+* Loudness (r=0.0354r=0.0354): Loudness also has a slight positive correlation with popularity.
+* Instrumentalness (r=−0.0768r=−0.0768): There is a slight negative correlation between instrumentalness and popularity, suggesting that songs with more vocals tend to be more popular.
+* Valence (r=−0.0483r=−0.0483): There is a slight negative correlation between valence and popularity.
+* Speechiness (r=−0.0451r=−0.0451): There is a slight negative correlation between speechiness and popularity.
 ```
 import scipy.stats as stats
 
@@ -161,7 +176,7 @@ for feature in features:
 
 p_values
 ```
-
+The p-values obtained from the ANOVA tests for the features across different popularity categories are as follows:
 ```
 {'explicit': 6.454145319575757e-131,
  'duration_ms': 1.7746465932399508e-56,
@@ -171,6 +186,6 @@ p_values
  'valence': 2.169545891776659e-87,
  'speechiness': 2.105664599560184e-155}
  ```
-
+All the p-values are extremely close to zero, much less than the commonly used significance level of 0.05. This indicates that there are statistically significant differences in the means of these features across different popularity categories.
 
 ## Machine Learning Algos
