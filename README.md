@@ -44,7 +44,7 @@ Here are some fun ones!
 
 When interpreting the provided histograms, we are getting insights into the different characteristics of a collection of music tracks. Let’s break down these insights:
 
-1. Popularity:
+Popularity:
 
     Majority Low Popularity: Most of the tracks have popularity between 0 and 40.
     Some High Popularity: Few tracks exist with high popularity, extending up to 100.
