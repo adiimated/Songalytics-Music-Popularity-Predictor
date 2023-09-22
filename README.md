@@ -95,7 +95,25 @@ Observations:
 
 ![](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/box%20plots%20by%20popularity%20category.png)
 
-### top 10 genres based on their frequencies
+* Popularity: As expected, "Chart-Toppers" have the highest median popularity, followed by "Mainstream Hits," "Emerging Artists," and "Underground Hits."
+* Danceability: "Mainstream Hits" and "Chart-Toppers" tend to have higher median danceability compared to "Emerging Artists" and "Underground Hits."
+* Energy: "Chart-Toppers" have a higher median energy level compared to other categories.
+* Loudness: "Chart-Toppers" and "Mainstream Hits" tend to be louder compared to "Emerging Artists" and "Underground Hits."
+
+### Top 10 genres based on their frequencies
+
+```
+sad            1000
+rockabilly      999
+rock-n-roll     999
+study           998
+mandopop        997
+electro         997
+chill           997
+house           997
+sertanejo       996
+cantopop        996
+```
 
 ### Artists with most Chart Toppers
 
