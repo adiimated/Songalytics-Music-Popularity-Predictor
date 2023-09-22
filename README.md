@@ -69,6 +69,15 @@ Conclusion:
 
 This collection seems to contain a diverse range of music tracks but leans more towards mainstream preferences, such as moderate to high danceability, higher energy levels, louder volumes, and common time signatures. There are also instances of less common musical elements, providing a variety, such as tracks with high instrumentalness, varied tempo, and live recordings. The uniform distribution in keys also ensures a wide range of musical scales.
 
+### Distribution of Categorical Features
+
+![Distribution of Categorical Features](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/distribution.png)
+
+* Explicit: The majority of the tracks are not explicit, with a smaller number of tracks being explicit.
+* Mode: Most tracks are in Mode 1, with fewer tracks in Mode 0.
+* Track Genre: The dataset has a diverse set of genres, with "sad", "upbeat", and "chill" being the most frequent ones.
+* Popularity Category: The majority of the tracks fall under the "Emerging Artists" category, followed by "Mainstream Hits", "Underground Hits", and "Chart-Toppers".
+
 
 ## What constitutes a popular song ?
 
