@@ -42,6 +42,8 @@ Here are some fun ones!
 
 ### Distribution of Numerical Features
 
+![Distribution of Numerical Features](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/distribution.png)
+
 When interpreting the provided histograms, we are getting insights into the different characteristics of a collection of music tracks. Let’s break down these insights:
 
 Popularity:
