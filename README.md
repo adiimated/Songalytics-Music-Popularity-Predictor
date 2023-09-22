@@ -78,6 +78,28 @@ This collection seems to contain a diverse range of music tracks but leans more 
 * Track Genre: The dataset has a diverse set of genres, with "sad", "upbeat", and "chill" being the most frequent ones.
 * Popularity Category: The majority of the tracks fall under the "Emerging Artists" category, followed by "Mainstream Hits", "Underground Hits", and "Chart-Toppers".
 
+### Correlation Matrix
+
+![](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/corr%20matrix.png)
+
+Observations:
+
+* Energy and Loudness have a strong positive correlation of 0.78, which is expected as louder songs are usually perceived as more energetic.
+* Valence and Danceability have a moderate positive correlation of 0.54, indicating that tracks perceived as more positive or happier tend to be more danceable.
+* Energy and Acousticness have a strong negative correlation of -0.71, suggesting that more energetic songs tend to have lower acousticness.
+* Loudness and Acousticness have a moderate negative correlation of -0.56, indicating that louder songs tend to have lower acousticness.
+* Energy and Valence have a moderate positive correlation of 0.39, suggesting that more energetic songs tend to be more positive or happier.
+* Danceability and Speechiness have a moderate positive correlation of 0.22, indicating that more danceable songs tend to have more spoken words.
+
+###  Box plots for numerical features against popularity_category
+
+![](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/box%20plots%20by%20popularity%20category.png)
+
+### top 10 genres based on their frequencies
+
+### Artists with most Chart Toppers
+
+### Average Dancebility for Top 10 Frequent Genres
 
 ## What constitutes a popular song ?
 
