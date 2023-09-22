@@ -28,6 +28,25 @@ Steps taken to clean the data:
 
 ## Explorartory Data Analysis
 
+### Summary Statistics
+
+1. Categorical Features:
+
+a. Artists:
+The dataset incorporates a diverse collection of 30,119 unique artists, where "The Beatles" is the preeminent group, featured 271 times, marking the highest frequency among all the artists present.
+
+b. Album Name:
+With 44,588 distinct album names present, "Alternative Christmas 2022" emerges as the most prevalent album, being mentioned 185 times, signifying the album's predominant representation.
+
+c. Track Name:
+The dataset reveals a comprehensive array of 69,477 unique track names, with "Run Rudolph Run" as the most recurring track, appearing 151 times.
+
+d. Track Genre:
+Among the 114 genres, "sad" is recognized as the most prevalent genre, appearing 1,000 times. This dominance can suggest a significant preference or production in this genre.
+
+e. Popularity Category:
+There are four distinguished popularity categories, with "Emerging Artists" being the most recurrent, evident 41,279 times, indicating a major portion of the dataset is attributed to new and rising artists.
+
 ## What constitutes a popular song ?
 
 ## Machine Learning Algos
