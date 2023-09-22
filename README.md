@@ -130,5 +130,36 @@ cantopop        996
 ### Average Dancebility for Top 10 Frequent Genres
 
 ## What constitutes a popular song ?
+```
+# Grouping by 'popularity_category' and getting the mean of each feature per category
+category_mean = df.groupby('popularity_category').mean()
 
+# Sorting the resulting DataFrame by 'popularity' in descending order for better readability
+category_mean.sort_values(by='popularity', ascending=False)
+     
+```
+
+```
+import scipy.stats as stats
+
+# Initialising a dictionary to hold p-values for each feature
+p_values = {}
+
+# List of features to perform ANOVA on
+features = ['explicit', 'duration_ms', 'danceability', 'loudness', 'instrumentalness', 'valence', 'speechiness']
+
+# Performing ANOVA for each feature
+for feature in features:
+    # Extracting the groups
+    group1 = df[df['popularity_category'] == 'charttoppers'][feature]
+    group2 = df[df['popularity_category'] == 'mainstreamhits'][feature]
+    group3 = df[df['popularity_category'] == 'upandcoming'][feature]
+    group4 = df[df['popularity_category'] == 'emerging'][feature]
+
+    # Performing ANOVA and storing the p-value
+    f_stat, p_value = stats.f_oneway(group1, group2, group3, group4)
+    p_values[feature] = p_value
+
+p_values
+```
 ## Machine Learning Algos
