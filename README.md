@@ -198,3 +198,11 @@ The p-values obtained from the ANOVA tests for the features across different pop
 All the p-values are extremely close to zero, much less than the commonly used significance level of 0.05. This indicates that there are statistically significant differences in the means of these features across different popularity categories.
 
 ## Machine Learning Algos
+
+| Algorithm | RMSE |
+| ------------- | ------------- |
+| Linear Regression  | 22.134  |
+| Random Forest Regressor  | 14.334  |
+| Support Vector Regressor  | 21.108  |
+| XGBoost  | 15.115  |
+| Neural Network Regressor (MLPRegressor)  | 20.086  |
