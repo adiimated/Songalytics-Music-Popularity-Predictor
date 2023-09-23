@@ -130,6 +130,8 @@ cantopop        996
 ### Average Dancebility for Top 10 Frequent Genres
 
 ## What constitutes a popular song ?
+
+### Comparing mean values of each popularity category
 ```
 # Grouping by 'popularity_category' and getting the mean of each feature per category
 category_mean = df.groupby('popularity_category').mean()
@@ -145,6 +147,11 @@ category_mean.sort_values(by='popularity', ascending=False)
 * Liveness: Up-and-Coming and Emerging Artists categories tend to have higher liveness compared to Chart-Toppers and Mainstream Hits.
 * Speechiness: Emerging Artists category has slightly higher speechiness compared to the other categories.
 
+### Correlation Matrix: Popularity Score
+
+![](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/corr%20matrix%20focus%20popularity.png)
+
+The correlation matrix (focused on popularity) and the correlation values show the relationship between the features and the popularity score.
 Observations:
 * Explicit Content (r=0.0424r=0.0424): Songs with explicit content tend to have a slight positive correlation with popularity.
 * Duration (r=0.0380r=0.0380): There is a slight positive correlation between the duration of a song and its popularity.
@@ -153,6 +160,8 @@ Observations:
 * Instrumentalness (r=−0.0768r=−0.0768): There is a slight negative correlation between instrumentalness and popularity, suggesting that songs with more vocals tend to be more popular.
 * Valence (r=−0.0483r=−0.0483): There is a slight negative correlation between valence and popularity.
 * Speechiness (r=−0.0451r=−0.0451): There is a slight negative correlation between speechiness and popularity.
+
+### ANOVA
 ```
 import scipy.stats as stats
 
