@@ -206,3 +206,5 @@ All the p-values are extremely close to zero, much less than the commonly used s
 | Support Vector Regressor  | 21.108  |
 | XGBoost  | 15.115  |
 | Neural Network Regressor (MLPRegressor)  | 20.086  |
+
+We can see that the least RMSE acquired is by using Random Forest Regressor. Now we can try hyperparameter tuning to see if we can lower the RMSE even further.
