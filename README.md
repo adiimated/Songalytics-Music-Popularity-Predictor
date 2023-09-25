@@ -2,13 +2,7 @@
 
 ## Introduction
 
-"Unlock the Rhythm of Music: Spotify Data Analysis and Song Popularity Prediction" 🎵
-
-Discover the magic of Spotify data analysis as we unravel the hidden stories behind your favorite tunes. Our project goes beyond the surface, using data science techniques to extract meaningful insights from Spotify's extensive music library. From genre trends to tempo preferences, we explore it all.
-
-But that's not all – we take it a step further! 🚀
-
-Our predictive model doesn't just stop at analysis; it forecasts the future of songs. Want to know which track might become the next chart-topper? Look no further! Our Popularity Prediction algorithm uses data-driven intelligence to provide a glimpse into the future of music.
+This study explores music trends through a detailed analysis of the Spotify dataset to uncover prevailing trends and predict song popularity using machine learning models. By examining a variety of genres and musical elements, this research aims to offer insights into listeners' preferences and the factors that contribute to a song's success. The findings are valuable for music creators, producers, and enthusiasts in understanding the elements that define the popularity of a track.
 
 ## Dataset
 
@@ -207,4 +201,17 @@ All the p-values are extremely close to zero, much less than the commonly used s
 | XGBoost  | 15.115  |
 | Neural Network Regressor (MLPRegressor)  | 20.086  |
 
-We can see that the least RMSE acquired is by using Random Forest Regressor. Now we can try hyperparameter tuning to see if we can lower the RMSE even further.
+We can see that the least RMSE acquired is by using Random Forest Regressor. 
+
+## Feature Importance 
+
+Lastly let's observe feature importance with help of Random Forest Regressor model we created since it gives the least RMSE. 
+
+![](https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/images/feature%20importance.png)
+
+As we can see album name, track genre, track name, artist and its acousticness hold the most importance while deciding whether a song will be a hit or not.
+
+## Conclusion
+
+In conclusion, the analysis of the Spotify dataset revealed significant trends in music tracks and listeners' preferences. This project successfully linked musical elements like energy and danceability to a song’s popularity and highlighted the variety in musical genres available on Spotify. The predictive models, especially the Random Forest Regressor, showed the capability of machine learning in predicting song popularity. This study serves as a stepping stone to further, more in-depth research into music analytics and user preferences.
+
