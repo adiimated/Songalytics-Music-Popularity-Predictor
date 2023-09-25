@@ -1,4 +1,4 @@
-# Songalytics: Spotify Data Analytics [work in progress]
+# Songalytics: Spotify Data Analytics
 
 ## Introduction
 
