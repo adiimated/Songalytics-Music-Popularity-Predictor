@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+    <div class="bg-dark collapse" id="navbarHeader" style>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+            </svg>
+            <strong>Music</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+    </header>
+    <main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container pt-5 pb-5">
+            <h1 class="jumbotron-heading">Music Popularity Predictor</h1>
+            <p class="lead text-muted pt-5 pb-5">
+                <!-- Write something about -->
+                Welcome to the Music Popularity Predictor, the ultimate tool for music producers and companies who want to take their music to the next level! With our cutting-edge machine learning algorithms and vast database of music trends and insights, you can finally unlock the secrets to creating hit songs that will resonate with your audience and climb the charts. Whether you're a seasoned producer or just starting out, the Music Popularity Predictor is here to help you make data-driven decisions that will take your music to new heights of success. So what are you waiting for? Sign up now and get ready to transform your music career!
+            </p>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Start Using the App
+                </a>
+            </p>
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body bg-light">
+                    <!-- <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <form method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+                        <!-- <input type="file" name="csv_file"> -->
+                        <!-- <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"></path>
+                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"></path>
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"></path>
+                            </svg>
+                        </span> -->
+                        <input type="file" name="csv_file" class="form-control" placeholder="Input CSV dataset to start predicting!!!" aria-label="Username" aria-describedby="basic-addon1">
+                        <input class="btn btn-success mt-3" type="submit" value="Upload">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h4 class="pt-5 pb-3 text-center">
+                Popular VS Not Popular
+            </h4>
+
+            <p class="lead text-muted text-center pb-5 ">
+                <!-- Write something about -->
+                Checkout the graph to get insights on the distibution of popular songs throughout the years.
+            </p>
+                
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <canvas height="400" id="bar_graph"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="album py-5">
+        <div class="container">
+            <h4 class="pt-5 pb-3 text-center">
+                Radar Graph for Acoustic Features
+            </h4>
+
+            <p class="lead text-muted text-center pb-5 ">
+                <!-- Write something about -->
+                Checkout what makes a song popular or not popular. Below is the graph which shows the mean values for the acoustic features for the top hundred songs of all times VS the rest of the songs.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <canvas id="radar_graph"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h4 class="pt-5 pb-3 text-center">
+                Exploring the Impact of Explicit Content in Music
+            </h4>
+
+            <p class="lead text-muted text-center pb-5 ">
+                <!-- Write something about -->
+                Checkout the trend in explicit content in music tracks.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <canvas id="line_graph"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/visualizations.js') }}"></script>
+</body>
+</html>
