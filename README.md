@@ -1,4 +1,4 @@
-# Songalytics: Spotify Data Analytics
+# Songalytics: Music Popularity Predictor
 
 ## Introduction
 
