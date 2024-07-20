@@ -4,6 +4,8 @@
 
 This study explores music trends through a detailed analysis of the Spotify dataset to uncover prevailing trends and predict song popularity using machine learning models. By examining a variety of genres and musical elements, this research aims to offer insights into listeners' preferences and the factors that contribute to a song's success. The findings are valuable for music creators, producers, and enthusiasts in understanding the elements that define the popularity of a track.
 
+<img src="https://github.com/adiimated/Songalytics-Spotify-Data-Analysis/blob/main/intro.jpg" style="width: 750px;">
+
 ## Dataset
 
 The dataset I used is a comprehensive compilation of Spotify tracks across 125 different genres, stored in a tabular CSV format. It offers a broad spectrum of audio features and metadata for each track, including the track's ID, artists, album name, popularity score, duration, explicitness, and numerous audio properties like danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, and time signature.
